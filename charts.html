@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Now UI Dashboard by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+
+    <!--    p1     -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+
+    <!--     p1     -->
+
+    <!--     p2     -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <!-- CSS Files -->
+
+    <link href="assets/css/now-ui-dashboard.css?v=1.0.1" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/demo/demo.css" />
+
+    <!--     p2     -->
+</head>
+
+<body class="">
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse"
+                    data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><i
+                        class="large material-icons">track_changes</i> <strong>Covid-19</strong></a>
+            </div>
+            
+            <ul class="nav navbar-top-links navbar-right">
+               
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i
+                            class="fa fa-user fa-fw"></i> <b>Charts</b> <i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="count.html"><i class="fa fa-user fa-fw"></i> each Country</a>
+            </li>
+        </ul>
+
+
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i>
+                            Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="count.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> Country</a>
+                    </li>
+                    <li>
+                        <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i>Self assignment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="About.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> About me</a>
+                    </li>
+
+
+
+
+                </ul>
+
+            </div>
+
+        </nav> <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="About.html"><i class="fa fa-user fa-fw"></i> My Profile</a>
+            </li>
+        </ul>
+
+        
+
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i>
+                            Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="count.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> Country</a>
+                    </li>
+                    <li>
+                        <a href="charts.html" class="active-menu waves-effect waves-dark"><i
+                                class="fa fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i>Self Assessment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="About.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> About me</a>
+                    </li>
+
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+
+        <div id="page-wrapper">
+            <div class="col-xs-12">
+                <div id="page-inner">
+                    <div class="row">
+                        <h4 class="card-title">Total in each case (Covid-19 world live)</h4>
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <h4 class="card-title"></h4>
+                                    <h4 class="card-title">Comfermed</h4>
+                                    <div class="dropdown">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="Comfermed"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <h4 class="card-title"></h4>
+                                    <h4 class="card-title">Deaths</h4>
+                                    <div class="dropdown">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="Deaths"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card card-chart">
+                                <div class="card-header">
+                                    <h4 class="card-title"></h4>
+                                    <h4 class="card-title">Recovered</h4>
+                                    <div class="dropdown">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="Rocovered"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    
+                
+
+            </div>
+            <div class="dashboard-cards">
+                <br>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card horizontal cardIcon waves-effect waves-dark">
+                        <div class="card-image orange">
+                            <br>
+                            <i class="">Confirmed</i>
+                        </div>
+                        <div class="card-stacked orange">
+                            <div class="card-content">
+                                <h3>
+                                    <p id="all">
+                                </h3>
+                            </div>
+                            <div class="card-action">
+                                <strong>Confirmed</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="card horizontal cardIcon waves-effect waves-dark">
+                        <div class="card-image red">
+                            <br>
+                            <i class="">Death</i>
+                        </div>
+                        <div class="card-stacked red">
+                            <div class="card-content">
+                                <h3>
+                                    <p id="alldeaths">
+                                </h3>
+                            </div>
+                            <div class="card-action">
+                                <strong>Death</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="card horizontal cardIcon waves-effect waves-dark">
+                        <div class="card-image green">
+                            <br>
+                            <i class="">Recovered</i>
+                        </div>
+                        <div class="card-stacked green">
+                            <div class="card-content">
+                                <h3>
+                                    <p id="allre">
+                                </h3>
+                            </div>
+                            <div class="card-action">
+                                <strong>Recovered</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+
+</body>
+
+<!-- p1 -->
+
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/materialize/js/materialize.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="assets/js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+<script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="assets/js/morris/morris.js"></script>
+
+
+<script src="assets/js/easypiechart.js"></script>
+
+
+<script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+
+<!-- Custom Js -->
+<script src="assets/js/custom-scripts.js"></script>
+
+
+<!-- p1 -->
+
+
+
+
+
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js"></script>
+
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+
+<!-- Chart JS -->
+<script src="assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/demo/demo.js"></script>
+<script src="graph.js"></script>
+
+</html>
